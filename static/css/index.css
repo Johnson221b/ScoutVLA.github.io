@@ -82,6 +82,37 @@ body {
     margin: 8px 4px;
 }
 
+.publication-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem 0.5rem;
+}
+
+.publication-links .link-block {
+  display: flex;
+  max-width: 100%;
+  margin: 0;
+}
+
+.publication-links .button {
+  max-width: 100%;
+  margin: 0 !important;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  font-family: inherit;
+}
+
+.publication-links .button:disabled {
+  background: var(--background-accent) !important;
+  color: var(--text-secondary) !important;
+  opacity: 1;
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+  transition: none !important;
+}
+
 .dnerf {
   font-variant: small-caps;
 }
@@ -761,6 +792,10 @@ code {
   .link-block {
     display: block;
     margin-bottom: 0.5rem;
+  }
+
+  .publication-links .link-block {
+    flex-basis: 100%;
   }
   
   .button {
