@@ -115,7 +115,7 @@
     "url": "https://YOUR_DOMAIN.com/ScoutVLA",
     "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
     "keywords": ["VLA", "UAV", "active perception", "embodied AI", "open-world", "visual question answering", "robotics"],
-    "abstract": "coming soon",
+    "abstract": "Aerial Embodied Question Answering (EQA) requires Unmanned Aerial Vehicles (UAVs) to actively perceive the environment and answer natural language questions. Existing outdoor EQA systems usually stop once the target enters the UAV's field of view, leaving the fine-grained viewpoint adjustment needed for evidence-seeking questions largely unresolved. To address this issue, we introduce FG-EQA, a fine-grained active perception EQA benchmark with more than 40K simulated trajectories and 1K real-world trajectories. Drawing inspiration from the “waggle dance” of scout bees, which iteratively adjust their flight paths to verify target information, we propose ScoutVLA, an evidence-driven Vision-Language-Action model for outdoor EQA. To emulate this active exploration behavior, ScoutVLA features a decoupled dual-expert architecture: a vision-language expert infers the semantic intent to identify missing evidence, while an independent action expert employs high-DoF flow matching to generate continuous viewpoint-refinement trajectories. To balance the competing demands of continuous control and semantic reasoning, we devise a decoupled training strategy with a knowledge insulation mechanism that prevents the action gradients from erasing the model's multimodal reasoning ability. Extensive simulation experiments show that ScoutVLA-Pi0.5 achieves strict success and QA correctness rates that are 10.48× and 7.85× the corresponding baseline averages, respectively. Closed-loop real-world experiments further assess the deployability of the adapted models through quantitative results and inspection sequences.",
     "citation": "",
     "isAccessibleForFree": true,
     "license": "https://creativecommons.org/licenses/by/4.0/",
@@ -183,11 +183,11 @@
                 </span>
 
                 <span class="link-block">
-                  <a href="#" class="external-link button is-normal is-rounded is-dark">
+                  <a href="https://github.com/Johnson221b/ScoutVLA.github.io/releases/download/appendix-2026-10-04/ICRA-2027-appendix.pdf" target="_blank" rel="noopener noreferrer" class="external-link button is-normal is-rounded is-dark">
                     <span class="icon" aria-hidden="true">
                       <i class="fas fa-file-pdf"></i>
                     </span>
-                    <span>Supplementary</span>
+                    <span>Appendix</span>
                   </a>
                 </span>
 
@@ -264,7 +264,7 @@
           To balance the competing demands of continuous control and semantic reasoning, we devise a decoupled training strategy with a knowledge insulation mechanism that prevents the action gradients from erasing the model's multimodal reasoning ability.
         </p>
         <p>
-          Extensive simulated experiments and a qualitative real-world field study both verify the superiority of ScoutVLA over the state-of-the-art baselines, demonstrating a <strong>10.48&times;</strong> higher average strict success rate and a <strong>7.72&times;</strong> higher average QA correctness.
+          Extensive simulation experiments show that <span style="color: #000;">ScoutVLA-Pi0.5</span> achieves strict success and QA correctness rates that are <strong>10.48&times;</strong> and <strong>7.85&times;</strong> the corresponding baseline averages, respectively. Closed-loop real-world experiments further assess the deployability of the adapted models through quantitative results and inspection sequences.
         </p>
       </div>
     </div>
